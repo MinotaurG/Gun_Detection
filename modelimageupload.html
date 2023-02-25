@@ -8,20 +8,41 @@
 <body>
   <div class="container">
     <h1>Gun Detection Model</h1>
-    <p>Welcome to our Gun Detection Model! Our group consisting of Aditya Shubham, Gaurav Srivastava, and Vasudev Sharma, have developed a deep learning model that detects guns in images. The model can be used for various applications, including law enforcement and public safety.</p>
-    <h2>Use Cases</h2>
+    <p>Welcome to our gun detection model. Our model is designed to detect handguns in images using deep learning techniques.</p>
+    <p>Use cases of our model include:</p>
     <ul>
-      <li>Law enforcement and public safety</li>
-      <li>Security systems in public places such as airports, malls, and schools</li>
-      <li>Preventing illegal possession of firearms</li>
+      <li>Security checks at public events</li>
+      <li>Screening of luggage at airports</li>
+      <li>Monitoring of public spaces for potential threats</li>
     </ul>
-    <h2>Upload an image to test the model</h2>
+    <p>We are Group 9, consisting of the following members:</p>
+    <ul>
+      <li>Aditya Shubham</li>
+      <li>Gaurav Srivastava</li>
+      <li>Vasudev Sharma</li>
+    </ul>
     <form action="http://64.227.160.227/api/upload" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="image">Upload an image:</label>
         <input type="file" name="image" id="image">
       </div>
       <button type="submit">Upload</button>
+    </form>
+    <h2>Contact Us</h2>
+    <form action="/submit-form" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </body>
