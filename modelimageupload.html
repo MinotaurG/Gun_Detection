@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Gun Detection Model</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Gun Detection Model</h1>
-  <form action="http://64.227.160.227/api/upload" method="POST" enctype="multipart/form-data">
-    <input type="file" name="image">
-    <input type="submit" value="Upload">
-  </form>
+  <div class="container">
+    <h1>Gun Detection Model</h1>
+    <form action="http://64.227.160.227/api/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="image">Upload an image:</label>
+        <input type="file" name="image" id="image">
+      </div>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
 </body>
 </html>
